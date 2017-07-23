@@ -1,0 +1,61 @@
+body{
+    background: #d9edf7;}
+
+.navbar-inverse{
+    border-radius:0;
+    background: radial-gradient(circle at 100% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    BORDER: NONE;
+    margin-bottom:0;
+}
+.navbar-inverse *{
+    color: #000000 !important;
+}
+#s_1,#s_2{
+    color: green;
+    height:auto;
+    font-size:24px;
+}
+
+.search{
+    margin-top:3%;
+}
+#footer{
+    width:100%;
+    background: radial-gradient(circle at 100% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    position: fixed;
+    bottom:0;
+    text-align:center;
+    color: white;
+}
+.paylash{
+    margin-left:30%;
+}
+.container{
+    background: transparent;
+    padding-bottom:5%;
+}
+.logo{
+    border-radius:2%;
+    background: radial-gradient(circle at 100% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.how img{
+    width:50%;
+}
+.how-p img{
+    width:100%;
+}
+.navbar-brand{
+    color: #000000 !important;
+    font-size:24px !important;
+;
+}
+
+@media screen and (max-width: 768px) {
+    h1,#s_1,#s_2{
+        font-size:14px;
+    }
+    .paylash{
+        margin-left:0;
+    }
+
+}
