@@ -1,4 +1,5 @@
 <?php
+ob_start();
 include 'menu.html';
 
 session_start();
@@ -12,6 +13,7 @@ unset($_SESSION['message']);
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
+            <h1>Online Instagram Foto,Video Və youtube Video yükləmə</h1>
             <h1> <i class="glyphicon glyphicon-arrow-down"></i>
                 Kopyaladığınız linki buraya əlavə edin
             <i class="glyphicon glyphicon-arrow-down"></i>
@@ -20,9 +22,7 @@ unset($_SESSION['message']);
     <div class="col-md-8 col-md-offset-2 search">
         <form action="get.php" method="post" onsubmit="return yoxla()">
             <div class="input-group">
-                <?php
-                $_SESSION['token']= sha1(md5(rand(10000,999999)));
-                ?>
+                <?php $_SESSION['token']= sha1(md5(rand(10000,999999))); ?>
                 <input type="hidden" value="<?=$_SESSION['token']?>" name="token">
                 <input type="url" id="s_1" class="form-control" placeholder="Nümunə link : https://www.instagram.com/p/BW3AmpLjeCW" name="url" required>
                 <div class="input-group-btn">

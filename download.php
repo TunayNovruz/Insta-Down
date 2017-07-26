@@ -7,7 +7,12 @@
  */
     session_start();
     $file = $_SESSION['file'];
-    $ext = pathinfo($file, PATHINFO_EXTENSION);
+    if(!empty($_SESSION['yout'])){
+        $ext = 'mp4';
+        unset($_SESSION['yout']);
+    }else{
+        $ext = pathinfo($file, PATHINFO_EXTENSION);
+    }
     header('Content-Description: File Transfer');
     header('Content-Type: application/octet-stream');
     header('Content-Disposition: attachment; filename=Insta-down-'.rand(1,9999).".$ext");
