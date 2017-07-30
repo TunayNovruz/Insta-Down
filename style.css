@@ -1,4 +1,4 @@
-body{
+/*body{
     background: #d9edf7;}
 
 .navbar-inverse{
@@ -58,4 +58,195 @@ body{
         margin-left:0;
     }
 
+}*/
+
+/* ------//////      \\\\\\------
+               SECOND
+   ------\\\\\\      //////------ */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url("img/bac.jpg") no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+/* ------//////      \\\\\\------
+               NAVBAR
+   ------\\\\\\      //////------ */
+
+.navbar-inverse{
+    background: rgba(0,0,0,0);
+    border: none;
+}
+
+li{
+    background: rgba(128,128,128,.9);
+    margin-right: 3px;
+    position: relative;
+    left: 5%;
+    border: 1px solid rgba(0,0,0,.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+li:hover{
+    background: rgb(44,44,36);
+    transition: 1s;
+}
+
+li>a{
+    color: #fff !important;
+}
+
+/* ------//////      \\\\\\------
+               LINKS
+   ------\\\\\\      //////------ */
+
+.main{
+    margin-top: 10%;
+    /*margin-right: 5%;*/
+    transition: 2s;
+    height: 100%;
+}
+
+#s_1{
+    font-size: 24px;
+    height: auto;
+    background: rgba(255,255,255,.7);
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+#s_2{
+    font-size: 24px;
+    height: auto;
+}
+
+h1{
+    color: rgba(44, 44, 36, 0.9);
+}
+
+.paylash{
+    margin-left: 28%;
+}
+
+/* ------//////      \\\\\\------
+               FOOTER
+   ------\\\\\\      //////------ */
+
+.panel-footer{
+    /*background: rgba(0,0,0,0);*/
+    background-image: url("img/bac.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+    border: 1px solid rgba(0,0,0,0);
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+}
+
+#footer{
+    background: rgba(0,0,0,0);
+}
+
+/* ------//////   \\\\\\------
+               HOW
+   ------\\\\\\   //////------ */
+
+.container{
+    background: rgba(255,255,255,.5);
+    padding-bottom:7%;
+    margin-bottom: 7%;
+    border-radius: 10px;
+}
+
+.how,.how-p{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.how img{
+    width:50%;
+}
+.how-p img{
+    width:100%;
+}
+
+/* ------//////      \\\\\\------
+               MOBİLE
+   ------\\\\\\      //////------ */
+
+@media screen and (max-width: 768px){
+    .navbar-inverse{
+        background: rgba(0,0,0,.3);
+        border: none;
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .navbar-header>button{
+        background-color: rgba(44,44,36,.4);
+        border: 1px solid rgba(44,44,36,.1) !important;
+    }
+
+    .navbar-header>a>span{
+        position: relative;
+        top: 30%;
+        font-size: 26px;
+        color: rgba(44,44,36,.9);
+    }
+
+    li{
+        background: none;
+        margin-right: 0;
+        position: relative;
+        left: 0;
+        font-size: 16px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    li>a{
+        color: rgba(249, 255, 255, 0.9) !important;
+    }
+
+    .main{
+        margin-top: 35%;
+    }
+
+    h1{
+        font-weight: bold;
+    }
+
+    h1,#s_1,#s_2{
+        font-size: 14px;
+    }
+
+    .paylash{
+        /*border: 1px solid black;*/
+        margin-left: 0;
+        padding:0
+    }
+
+
+    .container{
+        background: rgba(255,255,255,.5);
+        padding-bottom:7%;
+        margin-bottom: 30% !important;
+        border-radius: 10px;
+    }
+
+    .how,.how-p{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
 }

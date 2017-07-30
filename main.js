@@ -13,3 +13,8 @@ function yoxla() {
         return false;
     }
 }
+
+function clr() {
+    document.getElementById('btn').style.background="rgba(44,44,36,.4)";
+}
+
