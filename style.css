@@ -138,18 +138,17 @@ h1{
    ------\\\\\\      //////------ */
 
 .panel-footer{
-    /*background: rgba(0,0,0,0);*/
+    /*background: rgba(0,0,0,0);
     background-image: url("img/bac.jpg");
     background-attachment: fixed;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center bottom;*/
+	background-color:transparent;
     border: 1px solid rgba(0,0,0,0);
     width: 100%;
     color: white;
     font-weight: bold;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    
     font-size: 16px;
 }
 
@@ -220,7 +219,7 @@ h1{
     }
 
     .main{
-        margin-top: 35%;
+        margin-top: 10%;
     }
 
     h1{
@@ -234,7 +233,8 @@ h1{
     .paylash{
         /*border: 1px solid black;*/
         margin-left: 0;
-        padding:0
+        padding:0;
+		margin-bottom:20%;
     }
 
 
@@ -249,4 +249,7 @@ h1{
         padding-left: 3%;
         padding-right: 3%;
     }
+	.how img{
+		width:100%;
+	}
 }
